@@ -39,6 +39,9 @@ a{color:inherit}
 .nav a{text-decoration:none;font-weight:500;color:var(--muted);padding:8px 0;border-bottom:2px solid transparent}
 .nav a:hover,.nav a.active{color:var(--ink);border-color:var(--accent)}
 .menu-toggle{display:none;border:0;background:none;font-size:1.7rem}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
+  outline:3px solid var(--accent);outline-offset:3px;
+}
 .hero{
   min-height:calc(100vh - 73px);
   display:grid;grid-template-columns:1.1fr .9fr;align-items:center;
@@ -64,6 +67,9 @@ a{color:inherit}
 .btn-ghost{border-color:var(--line);background:rgba(255,255,255,.45)}
 .btn-light{background:#fff;color:var(--accent-dark)}
 .hero-note{display:flex;gap:10px;align-items:center;color:var(--muted);font-size:.92rem}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.hero-copy,.page-hero,.section-heading{animation:fadeInUp .6s ease both}
+.hero-card{animation:fadeInUp .6s .1s ease both}
 .hero-card{
   min-height:520px;border-radius:36px;background:linear-gradient(150deg,#6d462c,#b57d50);
   padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden
@@ -86,6 +92,22 @@ a{color:inherit}
 }
 .feature .icon{font-size:2rem}
 .feature h3{margin:14px 0 8px}
+.feature,.menu-card{transition:transform .2s ease,box-shadow .2s ease}
+.feature:hover,.menu-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.review-card p{font-style:italic}
+.review-card .stars{color:var(--accent-dark);letter-spacing:2px;margin-bottom:6px}
+.review-card strong{display:block;margin-top:12px;font-size:.92rem;color:var(--muted);font-weight:500}
+.category-title{
+  font-family:"Playfair Display",Georgia,serif;font-size:1.7rem;margin:48px 0 20px;
+}
+.category-title:first-child{margin-top:0}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.map-placeholder{
+  max-width:1000px;margin:0 auto;padding:60px 20px;text-align:center;
+  border:2px dashed var(--line);border-radius:var(--radius);color:var(--muted);
+}
+.map-icon{font-size:2.4rem;display:block;margin-bottom:10px}
+.map-placeholder strong{display:block;color:var(--ink);margin-bottom:6px;font-size:1.1rem}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .quote-card,.story-card{
   border-radius:var(--radius);padding:42px;background:#2e241c;color:#fff;box-shadow:var(--shadow)
@@ -93,6 +115,7 @@ a{color:inherit}
 .quote-card p{color:#fff;font:600 2rem/1.15 "Playfair Display",Georgia,serif}
 .quote-card span{color:rgba(255,255,255,.7)}
 .text-link{font-weight:700;text-decoration:none;color:var(--accent-dark)}
+.section-link{text-align:center;margin-top:32px}
 .cta{
   margin:40px 8vw 100px;padding:55px 60px;border-radius:32px;background:var(--accent-dark);
   color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px
@@ -102,8 +125,6 @@ a{color:inherit}
 .page-hero h1{font-size:clamp(3rem,6vw,5rem)}
 .page-hero p:last-child{max-width:700px;color:var(--muted);font-size:1.1rem}
 .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.menu-card{transition:transform .2s ease,box-shadow .2s ease}
-.menu-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .menu-card-top{display:flex;justify-content:space-between;align-items:center;gap:16px}
 .menu-icon{font-size:2rem}.price{font-weight:700;color:var(--accent-dark)}
 .menu-card p{margin-bottom:0}
@@ -141,7 +162,7 @@ textarea{resize:vertical}
 .footer strong{color:var(--ink);margin-right:8px}.footer span{display:block}
 @media (max-width: 900px){
   .hero,.split,.contact-grid{grid-template-columns:1fr}
-  .feature-grid,.menu-grid{grid-template-columns:1fr 1fr}
+  .feature-grid,.menu-grid,.process-grid{grid-template-columns:1fr 1fr}
   .hero{padding-top:55px}.hero-card{min-height:380px}
   .cup-art{height:280px}
   .cta{margin-left:5vw;margin-right:5vw;padding:40px;flex-direction:column;align-items:flex-start}
@@ -155,8 +176,13 @@ textarea{resize:vertical}
   .hero{padding:55px 5vw;min-height:auto}
   .section{padding:72px 5vw}
   .page-hero{padding:65px 5vw 35px}
-  .feature-grid,.menu-grid{grid-template-columns:1fr}
+  .feature-grid,.menu-grid,.process-grid{grid-template-columns:1fr}
   .value-list>div{grid-template-columns:50px 1fr}
   .value-list p{grid-column:2}
   .footer{padding:25px 5vw;flex-direction:column}
+  .map-placeholder{padding:40px 20px}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .hero-copy,.page-hero,.section-heading,.hero-card,.feature,.menu-card{animation:none;transition:none}
 }

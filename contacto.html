@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contacto, horario y ubicación de Café Luna.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>Café Luna · Contacto</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -16,7 +17,7 @@
       <a href="index.html">Inicio</a>
       <a href="menu.html">Menú</a>
       <a href="nosotros.html">Nosotros</a>
-      <a class="active" href="contacto.html">Contacto</a>
+      <a class="active" href="contacto.html" aria-current="page">Contacto</a>
     </nav>
   </header>
 
@@ -46,6 +47,20 @@
           <button class="btn btn-primary" type="submit">Preparar email</button>
           <p class="form-note">Al pulsar el botón se abrirá tu aplicación de correo. No necesitamos un servidor para esta demo.</p>
         </form>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="section-heading narrow">
+        <p class="eyebrow">CÓMO LLEGAR</p>
+        <h2>Ubicación</h2>
+      </div>
+      <!-- Espacio reservado para un mapa real. Cuando tengas la dirección definitiva,
+           sustituye este bloque por un iframe de Google Maps (o similar) con esa ubicación. -->
+      <div class="map-placeholder" role="img" aria-label="Espacio reservado para el mapa de ubicación">
+        <span class="map-icon" aria-hidden="true">🗺️</span>
+        <strong>Mapa próximamente</strong>
+        <p>Aquí se mostrará el mapa con la ubicación real del negocio.</p>
       </div>
     </section>
   </main>

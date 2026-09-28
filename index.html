@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Café Luna: café de especialidad, desayunos y repostería artesanal.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>Café Luna · Inicio</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
@@ -16,7 +17,7 @@
     </a>
     <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Navegación principal">
-      <a class="active" href="index.html">Inicio</a>
+      <a class="active" href="index.html" aria-current="page">Inicio</a>
       <a href="menu.html">Menú</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="contacto.html">Contacto</a>
@@ -30,8 +31,8 @@
         <h1>Un buen café cambia el día.</h1>
         <p class="lead">Tu rincón del barrio para empezar la mañana, quedar con amigos o parar cinco minutos y respirar.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="menu.html">Ver nuestro menú</a>
-          <a class="btn btn-ghost" href="contacto.html">Cómo encontrarnos</a>
+          <a class="btn btn-primary" href="menu.html">Ver menú</a>
+          <a class="btn btn-ghost" href="contacto.html">Contactar</a>
         </div>
         <div class="hero-note">
           <span>★</span>
@@ -76,6 +77,56 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">PRODUCTOS DESTACADOS</p>
+        <h2>Algunos de nuestros favoritos.</h2>
+        <p>Selección de ejemplo — sustituye por los productos estrella de tu negocio.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">☁️</span><span class="price">2,80 €</span></div>
+          <h3>Capuchino</h3><p>Espresso, leche y espuma cremosa.</p>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">🥐</span><span class="price">2,00 €</span></div>
+          <h3>Croissant</h3><p>Recién horneado y crujiente.</p>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">🍰</span><span class="price">3,00 €</span></div>
+          <h3>Tarta casera</h3><p>Una porción diferente cada día.</p>
+        </article>
+      </div>
+      <p class="section-link">
+        <a class="text-link" href="menu.html">Ver el menú completo →</a>
+      </p>
+    </section>
+
+    <section class="section section-soft">
+      <div class="section-heading">
+        <p class="eyebrow">OPINIONES</p>
+        <h2>Lo que dicen quienes nos visitan.</h2>
+        <p>Reseñas de ejemplo — sustitúyelas por opiniones reales de tus clientes.</p>
+      </div>
+      <div class="feature-grid review-grid">
+        <article class="feature review-card">
+          <div class="stars" aria-label="Valoración: 5 de 5 estrellas">★★★★★</div>
+          <p>"El café es excelente y el ambiente muy acogedor. Se ha convertido en mi parada de cada mañana."</p>
+          <strong>— Cliente de ejemplo</strong>
+        </article>
+        <article class="feature review-card">
+          <div class="stars" aria-label="Valoración: 5 de 5 estrellas">★★★★★</div>
+          <p>"La repostería siempre está fresca y el trato es cercano. Muy recomendable."</p>
+          <strong>— Cliente de ejemplo</strong>
+        </article>
+        <article class="feature review-card">
+          <div class="stars" aria-label="Valoración: 4 de 5 estrellas">★★★★☆</div>
+          <p>"Buen sitio para trabajar un rato con el portátil, tranquilo y con buen Wi-Fi."</p>
+          <strong>— Cliente de ejemplo</strong>
+        </article>
+      </div>
+    </section>
+
     <section class="section split">
       <div>
         <p class="eyebrow">PARA TU NEGOCIO</p>
@@ -86,6 +137,22 @@
       <div class="quote-card">
         <p>“Entrar por el café, quedarse por el ambiente.”</p>
         <span>Café Luna</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div class="contact-card">
+          <h2>Horario y ubicación</h2>
+          <div class="contact-row"><span>📍</span><div><strong>Dirección (ejemplo)</strong><p>Calle Principal 123<br>Alicante</p></div></div>
+          <div class="contact-row"><span>🕐</span><div><strong>Horario (ejemplo)</strong><p>Lunes a sábado<br>08:00–20:00</p></div></div>
+        </div>
+        <div>
+          <p class="eyebrow">TE ESPERAMOS</p>
+          <h2>Fácil de encontrar, fácil de disfrutar.</h2>
+          <p>Consulta el mapa y todos los datos de contacto en nuestra página dedicada.</p>
+          <a class="text-link" href="contacto.html">Ver mapa y contacto →</a>
+        </div>
       </div>
     </section>
 
