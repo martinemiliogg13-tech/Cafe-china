@@ -2,11 +2,12 @@ CAFÉ LUNA — WEB COMPLETA
 
 Archivos:
 - index.html     → página principal
-- menu.html      → menú
-- nosotros.html  → historia y valores
-- contacto.html  → ubicación, horario y formulario
+- menu.html      → menú (bebidas, desayunos, repostería)
+- nosotros.html  → historia, valores y proceso del café
+- contacto.html  → ubicación, horario, formulario y espacio para mapa
 - styles.css     → diseño
 - script.js      → menú móvil, año automático y formulario de email
+- favicon.svg    → icono de la pestaña del navegador
 
 CÓMO ABRIR EN GOOGLE CHROME (MAC)
 1. Abre la carpeta.
