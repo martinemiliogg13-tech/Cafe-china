@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Menú de Café Luna: cafés, desayunos y repostería.">
+  <title>Café Luna · Menú</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">☾</span><span>Café Luna</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a class="active" href="menu.html">Menú</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">NUESTRO MENÚ</p>
+      <h1>Algo rico para cada momento.</h1>
+      <p>Precios de ejemplo para que puedas practicar. En una web real, estos datos se sustituyen por los del negocio.</p>
+    </section>
+
+    <section class="section">
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">☕</span><span class="price">1,50 €</span></div>
+          <h3>Espresso</h3><p>Corto, intenso y recién molido.</p>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">🥛</span><span class="price">2,50 €</span></div>
+          <h3>Latte</h3><p>Café suave con leche vaporizada.</p>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">☁️</span><span class="price">2,80 €</span></div>
+          <h3>Capuchino</h3><p>Espresso, leche y espuma cremosa.</p>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">🍵</span><span class="price">2,00 €</span></div>
+          <h3>Té del día</h3><p>Consulta las infusiones disponibles.</p>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">🥐</span><span class="price">2,00 €</span></div>
+          <h3>Croissant</h3><p>Recién horneado y crujiente.</p>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-top"><span class="menu-icon">🍰</span><span class="price">3,00 €</span></div>
+          <h3>Tarta casera</h3><p>Una porción diferente cada día.</p>
+        </article>
+      </div>
+      <div class="info-banner">
+        <strong>Menú del día:</strong> café + tostada + fruta · 5,50 €
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="section-heading narrow">
+        <p class="eyebrow">CAMBIOS RÁPIDOS</p>
+        <h2>¿Quieres editar precios?</h2>
+        <p>Busca la tarjeta correspondiente en <code>menu.html</code>, cambia el texto y guarda el archivo. No necesitas tocar el resto del diseño.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Café Luna</strong><span>Tu café de barrio.</span></div>
+    <div>© <span data-year></span> Café Luna</div>
+  </footer>
+</body>
+</html>

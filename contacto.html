@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto, horario y ubicación de Café Luna.">
+  <title>Café Luna · Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">☾</span><span>Café Luna</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a class="active" href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">CONTACTO</p>
+      <h1>Ven a conocernos.</h1>
+      <p>Todos los datos de aquí son ficticios: cámbialos antes de usar la web para un negocio real.</p>
+    </section>
+
+    <section class="section contact-grid">
+      <div class="contact-card">
+        <h2>Información</h2>
+        <div class="contact-row"><span>📍</span><div><strong>Dirección</strong><p>Calle Principal 123<br>Alicante</p></div></div>
+        <div class="contact-row"><span>🕐</span><div><strong>Horario</strong><p>Lunes a sábado<br>08:00–20:00</p></div></div>
+        <div class="contact-row"><span>📞</span><div><strong>Teléfono</strong><p><a href="tel:+34600000000">600 000 000</a></p></div></div>
+        <div class="contact-row"><span>✉️</span><div><strong>Email</strong><p><a href="mailto:hola@cafeluna.example">hola@cafeluna.example</a></p></div></div>
+      </div>
+
+      <div class="contact-card">
+        <h2>Escríbenos</h2>
+        <form onsubmit="return sendEmail(event)">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          <button class="btn btn-primary" type="submit">Preparar email</button>
+          <p class="form-note">Al pulsar el botón se abrirá tu aplicación de correo. No necesitamos un servidor para esta demo.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Café Luna</strong><span>Tu café de barrio.</span></div>
+    <div>© <span data-year></span> Café Luna</div>
+  </footer>
+</body>
+</html>
